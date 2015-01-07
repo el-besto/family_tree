@@ -9,31 +9,37 @@ describe Child do
 
   describe "Initialization" do
     it "is an instance of the Child class" do
-
+      expect(@child.is_a?(Child)).to be(true)
     end
     it "is assigned a name" do
-
+      expect(@child.name).to eq("ruby")
     end
     it "is assigned an age" do
-
+      expect(@child.age).to eq(1)
     end
     it "is assigned a gender" do
-
+      expect(@child.gender).to eq("female")
     end
+
+## not done ######################
     it "is assigned a favColor" do
-
+      expect(@child.favColor).to eql(@@favColor)
     end
-    it "should increment the children variable by 1 when created" do
+## not done ######################
 
+    it "should increment the children variable by 1   when created" do
+      expect(@@children).to be()
+      #increment by one
     end
     it "should increment the grandchildren variable by 1 when created" do
 
     end
   end
 
+## not done ######################
   describe "#growUp" do
     it "gets older by one year when the method is called" do
-
+      expect(@child.growUp).to be(@child.age)
 
     end
   end
